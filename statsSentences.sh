@@ -28,5 +28,5 @@ do
 done < "texto.txt"
 echo "La oracion mas corta es: $o_corta"
 echo "La oracion mas larga es: $o_larga"
-echo "El promedio de cada oración es de: $(echo "scale=2;(($long_total/$total_o))" | bc) caracteres"
+echo "El promedio de cada oración es de $(echo "scale=2;(($long_total/$total_o))" | bc) caracteres"
 exit 0

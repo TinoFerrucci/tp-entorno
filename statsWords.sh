@@ -25,4 +25,4 @@ do
 done
 echo "La palabra mas corta es: $pal_corta"
 echo "La palabra mas larga es: $pal_larga"
-echo "La longitud promedio de las palabras es: $(echo "scale=2; (($long_total/$total_pal))" | bc)"
+echo "La longitud promedio de las palabras es de $(echo "scale=2; (($long_total/$total_pal))" | bc) caracteres"
