@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-PS3="Elija un archivo: "
+PS3="Elija una opción: "
 select opcion in "statsWords.sh" "statsUsageWords.sh" "findNames.sh" "statsSentences.sh" "blankLinesCounter.sh" "SALIR"
 do
   if [ $REPLY == 6 ]
