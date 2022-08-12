@@ -4,8 +4,11 @@
 ### Comisión 3
 ### Grupo 18
 
+## Información sobre el proyecto:
+### Consignas: https://drive.google.com/file/d/1qfZTkA4zPgNroqfGzBhRr52F_XYgeDmu/view?usp=sharing
+### Documentación sobre el trabajo realizados: 
 
-## ¿Como ejecuto el git?
+## ¿Como ejecuto el trabajo?
 ### Primero clonamos el repositorio
 ```bash 
 git clone https://github.com/TinoFerrucci/tp-entorno.git

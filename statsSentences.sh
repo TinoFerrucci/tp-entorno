@@ -15,12 +15,9 @@ do
     if [[ ${#line} -gt ${#o_larga} ]]
     then
       o_larga=$line
-    elif [[ ${#line} -lt ${#o_corta} ]]
+    elif [[ ${#line} -lt ${#o_corta} ]] && [[ ${#line} != 0 ]]
     then
-      if [[ ${#line} != 0 ]]
-      then
-        o_corta=$line
-      fi
+      o_corta=$line
     fi
   fi
   total_o=$(( $total_o + 1 ))
