@@ -1,21 +1,29 @@
 # Trabajo práctico final de Entorno de Programación
 ## Integrantes
 ### Constantino Ferrucci
+### Comisión 3
+### Grupo 18
+
 
 ## ¿Como ejecuto el git?
 ### Primero clonamos el repositorio
+```bash 
 git clone https://github.com/TinoFerrucci/tp-entorno.git
-
+```
 ### Ingresamos en el directorio
+```bash 
 cd tp-entorno
-
+```
 ### Luego nos aseguramos de instalar los paquetes de Docker (en caso de no tenerlo instalado)
+```bash 
 apt-get install docker
-
+```
 ### Creamos la imagen con el tag tp-entorno
-docker build -t tp-entorno
-
+```bash 
+docker build -t tp-entorno .
+```
 ### Corremos la imagen en modo interactivo
+```bash 
 docker run -it tp-entorno
-
+```
 
