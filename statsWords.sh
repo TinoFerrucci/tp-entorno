@@ -9,8 +9,8 @@ for i in $texto
 do
   if [ $total_pal == 0 ]
   then
-    pal_corta=$i
-    pal_larga=$i
+    pal_corta=$(filtro $i)
+    pal_larga=$(filtro $i)
   else
     if [ $(expr length $(filtro $i)) -gt $(expr length $pal_larga) ]
     then
