@@ -16,7 +16,7 @@ cd tp-entorno
 ```
 ### Luego nos aseguramos de instalar los paquetes de Docker (en caso de no tenerlo instalado)
 ```bash 
-apt-get install docker
+sudo apt-get install docker
 ```
 ### Creamos la imagen con el tag tp-entorno
 ```bash 
