@@ -6,7 +6,7 @@
 
 ## Información sobre el proyecto:
 ### Consignas: https://drive.google.com/file/d/1qfZTkA4zPgNroqfGzBhRr52F_XYgeDmu/view?usp=sharing
-### Documentación sobre el trabajo realizados: https://drive.google.com/file/d/1mdDSOM2es2PPXiZPyMEXCQ2Hq2rbo3aE/view?usp=sharing 
+### Documentación sobre el trabajo realizado: https://drive.google.com/file/d/1mdDSOM2es2PPXiZPyMEXCQ2Hq2rbo3aE/view?usp=sharing
 
 ## ¿Como ejecuto el trabajo?
 ### Primero clonamos el repositorio
@@ -29,4 +29,3 @@ docker build -t tp-entorno .
 ```bash 
 docker run -it tp-entorno
 ```
-
