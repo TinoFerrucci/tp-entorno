@@ -7,21 +7,22 @@ total_pal=0
 long_total=0
 for i in $texto
 do
+filt=$(filtro $i)
   if [ $total_pal == 0 ]
   then
-    pal_corta=$(filtro $i)
-    pal_larga=$(filtro $i)
+    pal_corta=$filt
+    pal_larga=$filt
   else
-    if [ $(expr length $(filtro $i)) -gt $(expr length $pal_larga) ]
+    if [ ${#filt} -gt ${#pal_larga} ]
     then
-      pal_larga=$(filtro $i)
-    elif [ $(expr length $(filtro $i)) -lt $(expr length $pal_corta) ]
+      pal_larga=$filt
+    elif [ ${#filt} -lt ${#pal_corta} ]
     then
-      pal_corta=$(filtro $i)
+      pal_corta=$filt
     fi
   fi
   total_pal=$(($total_pal + 1))
-  long_total=$(($long_total + $(expr length $(filtro $i))))
+  long_total=$(($long_total + ${#filt}))
 done
 echo "La palabra mas corta es: $pal_corta"
 echo "La palabra mas larga es: $pal_larga"

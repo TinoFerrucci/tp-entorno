@@ -5,9 +5,10 @@ touch texto2.txt
 texto2=texto2.txt
 for i in $texto
 do
-  if [ $(expr length $(filtro $i)) -ge 4 ]
+filt=$(filtro $i)
+  if [ ${#filt} -ge 4 ]
   then
-    (echo $(filtro $i))>>$texto2
+    (echo $filt)>>$texto2
   fi
 done
 cat $texto2 | sort | uniq -c | sort -r | head

@@ -11,7 +11,7 @@ do
   then
     echo "Usted eligio la opcion $REPLY. Cargando $opcion"
     echo "Puede demorar unos segundos"
-    bash $opcion
+    ./$opcion
     echo "" ; echo "---------------------------------------" ; echo ""
     continue
   else
